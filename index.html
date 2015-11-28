@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title> Init7</title>
+    
+    <meta name="description" content="Init7">
+    <meta name="author" content="Lautaro Silva" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/init7.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+</head>
+
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p><b>Versión básica del sitio</b></p>
+        <p>Para una mejor experiencia por favor user la última versión de <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b> desde su computador</p>
+    </div>
+
+
+    <div id=impress>
+
+
+    <div id="Init7" class="step" data-x="0" data-y="0" data-scale="4">
+        <h1>Init7</h1>
+    </div>
+
+    <div id="WebMapping" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>WebMapping</p>
+    </div>
+
+    <div id="georef" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>Georreferenciación</p>
+    </div>
+
+    <div id="BD" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>Bases de datos GeoEspaciales</p>
+        <iframe style="border: none;" height="400" width="600" src="http://sig.gorebiobio.cl/maps/122/embed"></iframe>
+    </div>
+
+
+
+
+
+    </div>
+
+    <div class="hint">
+            <p>Use espacio o las flechas para navegar</p>
+        </div>
+
+        <script>
+if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+        </script>
+
+        <script src="js/impress.js"></script>
+
+        <script>impress().init();</script>
+</body>
+
+
+</html>
