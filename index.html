@@ -31,25 +31,51 @@
     <div id=impress>
 
 
-    <div id="Init7" class="step" data-x="0" data-y="0" data-scale="4">
-        <h1>Init7</h1>
+    <div id="Inicio" class="step" data-x="0" data-y="0" data-scale="1">
+        <!--<h1>Init7</h1>-->
+        <img src="img/init7.png" alt="Init7" height="177" width="340">
     </div>
 
-    <div id="WebMapping" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="Servicios-WebMapping" class="step" data-x="1000" data-y="500" data-z=-500 data-rotate-y="90" data-scale="2">
         <p>WebMapping</p>
     </div>
 
-    <div id="georef" class="step" data-x="3500" data-y="2100" data-rotate-y="80" data-scale="6">
+    <div id="Servicios-Georreferenciación" class="step" data-x="3500" data-y="1000" data-rotate-y="180" data-scale="2">
         <p>Georreferenciación</p>
     </div>
 
-    <div id="BD" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="Servicios-BD" class="step" data-x="-1000" data-y="1500" data-z="-500" data-rotate-y="270" data-scale="3">
         <p>Bases de datos GeoEspaciales</p>
+    </div>
+
+    <div id="Herramientas" class="step" data-x="0" data-y="2000" data-z="-500" data-rotate-x="90" data-scale="4">
+        <p>Herramientas</p>
+        <h2>GeoNode 2.4</h2>
         <iframe style="border: none;" height="400" width="600" src="http://sig.gorebiobio.cl/maps/122/embed"></iframe>
     </div>
 
-
-
+    <div id="Contacto" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate-x="90" data-scale="5">
+        <p>Contacto</p>
+        Escribir a contacto@init7.cl
+        <!--Facebook-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-share-button" data-href="https://www.facebook.com/init7.cl" data-layout="button_count"></div>
+        <!-- Linken in-->
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: es_ES</script>
+        <script type="IN/Share" data-url="https://www.linkedin.com/company/init7" data-counter="right"></script>
+        <!--Twitter-->
+        <a href="https://twitter.com/init7cl" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @init7cl</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <!-- Github -->
+        <a class="github-button" href="https://github.com/init-7" data-style="mega" data-count-href="/init-7/followers" data-count-api="/users/init-7#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @init-7 on GitHub">Follow @init-7</a>
+    </div>
 
 
     </div>
