@@ -31,32 +31,47 @@
     <div id=impress>
 
 
-    <div id="Inicio" class="step" data-x="0" data-y="0" data-scale="1">
+    <div id="Inicio" class="step" data-x="0" data-y="0" data-scale="8">
         <!--<h1>Init7</h1>-->
         <img src="img/init7.png" alt="Init7" height="177" width="340">
     </div>
 
-    <div id="Servicios-WebMapping" class="step" data-x="1000" data-y="500" data-z=-500 data-rotate-y="90" data-scale="2">
-        <p>WebMapping</p>
+    <div id="Servicios-WebMapping" class="step" data-x="10000" data-y="10000" data-z=-10000 data-rotate-y="90" data-scale="6">
+        <p><b>WebMapping</b></p>
+        <p>Creación de aplicaciones web con mapas.</p>
+        <p>Vinculación a distintos formatos de entrada de datos (Bases de datos, Servicios OGC, Archivos).</p>
+        <p>Visualización de datos geográficos y BD asociada.</p>
+
+
     </div>
 
-    <div id="Servicios-Georreferenciación" class="step" data-x="3500" data-y="1000" data-rotate-y="180" data-scale="2">
-        <p>Georreferenciación</p>
-    </div>
-
-    <div id="Servicios-BD" class="step" data-x="-1000" data-y="1500" data-z="-500" data-rotate-y="270" data-scale="3">
+    <div id="Servicios-BD" class="step" data-x="0" data-y="20000" data-z="-20000" data-rotate-y="270" data-scale="6">
         <p>Bases de datos GeoEspaciales</p>
+        <p>Creamos bases de datos espaciales que se ajusten a sus necesidades e infraestructura existente.</p>
     </div>
 
-    <div id="Herramientas" class="step" data-x="0" data-y="2000" data-z="-500" data-rotate-x="90" data-scale="4">
-        <p>Herramientas</p>
-        <h2>GeoNode 2.4</h2>
-        <iframe style="border: none;" height="400" width="600" src="http://sig.gorebiobio.cl/maps/122/embed"></iframe>
+    <div id="Servicios-Georreferenciación" class="step" data-x="0" data-y="3000" data-z="-10000" data-rotate-y="180" data-scale="6">
+        <h2>Georreferenciación y Digitalización</h2>
+        <p>Georreferenciación de Imágenes Satelitales, fotos aéreas o planos en papel</p>
+        <p>Formatos Raster, Vectorial y físico</p>
+        <p>Vinculación con bases de datos</p>
+        <p>En base al sistema de referencia que desee</p>
     </div>
 
-    <div id="Contacto" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate-x="90" data-scale="5">
-        <p>Contacto</p>
-        Escribir a contacto@init7.cl
+    <div id="Herramientas" class="step" data-x="0" data-y="-30000" data-z="-5000" data-rotate-x="-90" data-scale="8">
+        <p align="left">Nos gusta que nuestros clientes tengan control sobre su software, con herramientas como:</p>
+        <p>Q GIS</p>
+        <p>Geoserver</p>
+        <p>Javascript + OpenLayers</p>
+        <p>PostgreSQL + PostGis</p>
+        <p>Highcharts maps</p>
+        <p>entre otras...</p>
+        <iframe style="border: none;" height="400" width="800" align="right" src="http://sig.gorebiobio.cl/maps/122/embed"></iframe>
+    </div>
+
+    <div id="Contacto" class="step" data-x="0" data-y="20000" data-z="1500" data-rotate-x="-90" data-scale="9">
+        <p><b class="positioning">Contactenos</b>, cuentenos acerca de sus <b class="rotating">ideas</b></p>
+        <a href="mailto:contacto@init7.cl?Subject=Contacto">Escribanos a contacto@init7.cl</a> y <b class="scaling">síganos</b> en:
         <!--Facebook-->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -74,25 +89,22 @@
         <a href="https://twitter.com/init7cl" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @init7cl</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <!-- Github -->
-        <a class="github-button" href="https://github.com/init-7" data-style="mega" data-count-href="/init-7/followers" data-count-api="/users/init-7#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @init-7 on GitHub">Follow @init-7</a>
-    </div>
-
+        <a class="github-button" href="https://github.com/init-7" data-style="mega" data-count-href="/init-7/followers" data-count-api="/users/init-7#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @init-7 on GitHub">Github @init-7</a>
+        </div>
 
     </div>
 
     <div class="hint">
             <p>Use espacio o las flechas para navegar</p>
-        </div>
+    </div>
 
-        <script>
+    <script>
 if ("ontouchstart" in document.documentElement) { 
         document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
-        </script>
-
-        <script src="js/impress.js"></script>
-
-        <script>impress().init();</script>
+    </script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 </body>
 
 
